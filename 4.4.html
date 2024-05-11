@@ -1,0 +1,242 @@
+<head>
+    <title>여행 ♡LOG</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Moirai+One&display=swap');
+        
+        @import url('https://fonts.googleapis.com/css2?family=Moirai+One&family=Song+Myung&family=Sunflower:wght@300&display=swap');
+        @media(max-width:800px){
+            #grid{
+                display: block;
+                    }
+            ol{
+                
+                border-right:none;
+                
+                }
+            h1{
+                border-bottom: none;
+                }
+            }
+        body {
+            margin: 0;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-family: "Moirai One", serif;
+            font-size: 3vw;
+            text-align: center;
+            border-bottom: 3px solid gray;
+            margin: 0;
+            padding: 25px;
+        }
+
+
+        ul {
+            text-align: center;
+            list-style-type: none;
+            border-right: 3px solid gray;
+            width: 20vw;
+            margin: 0;
+            padding: 20px;
+            padding-left: 2vw;
+            padding-right: 3.15vw;
+        }
+
+        ul li {
+            font-family: "Moirai One", serif;
+            font-size: 2.5vw;
+            margin-top: 0.8vw; /* 각 리스트 아이템 위쪽 여백 */
+            margin-bottom: 1vw; /* 각 리스트 아이템 아래쪽 여백 */
+        }
+        
+        /* 이메일 주소의 글자 크기를 작게 조정합니다. */
+        #email-address {
+            font-size: 1vw;
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: 20vw 1fr;
+            column-gap: 0; 
+        }
+        h2{
+            font-family: "Sunflower", serif;
+            padding-left: 24vw;
+            margin: 2vw;
+        }
+        #kahill-image {
+            margin-left: 14.6vw;
+            width: 56vw;
+            max-width: 100%;
+            height: auto;
+        }
+        #box{
+            font-family: "Sunflower", serif;
+            font-size: 2vw;
+        }
+
+        p {
+            margin-left: 15.8vw;
+            margin-right: 11.4vw;
+            font-size: 1.3vw;
+            text-align: justify;
+        }
+
+        /* 추가된 CSS 코드 */
+        .like-content {
+            display: inline-block;
+            width: 162%;
+            margin: -10vw 0 0;
+            padding: 43px 0;
+            font-size: 1.8vw;
+            border-top: 0vw dashed #eee;
+            text-align: center;
+        }
+        .like-content span {
+          color: #9d9da4;
+          font-family: monospace;
+        }
+        .like-content .btn-secondary {
+            display: block;
+            margin: 9vw auto 0;
+            text-align: center;
+            background: #ed2553;
+            border-radius: 0.3vw;
+            box-shadow: 0 1vw 2vw -0.8vw rgb(240, 75, 113);
+            padding: 1vw 1.7vw;
+            font-size: 1vw;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            color: #ffffff;
+            text-decoration: none;
+            transition: 0.3s ease;
+            
+        }
+        .like-content .btn-secondary:hover {
+            transform: translateY(-0.3vw);
+        }
+        .like-content .btn-secondary .fa {
+            margin-right: 0.5vw;
+        }
+        .animate-like {
+          animation-name: likeAnimation;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+          animation-duration: 0.65s;
+        }
+        @keyframes likeAnimation {
+          0%   { transform: scale(30); }
+          100% { transform: scale(1); }
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    
+    
+    <h1>여행 ♡LOG</h1>
+    <input id="Night _Day" type="button" value="Night" onclick=" 
+        
+        var target = document.querySelector('body');
+        if (this.value === 'Night ') {
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            this.value = 'Day';
+    
+            
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length){
+                console.log(alist[i]);
+                alist[i].style.color = 'powderblue';
+                i+=1;
+            }
+        }
+    
+        else {
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            this.value = 'Night ';
+    
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length){
+                console.log(alist[i]);
+                alist[i].style.color = 'black';
+                i+=1;
+            }
+        }"; onclick = "likeAnimationButton()">
+    
+    <div id="grid">
+    <ul>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1E9T8kPAQV2zMSf0hz3K6A?utm_source=generator&theme=0" width="75%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <br>
+        <h3><li><a href="2022.html">♡. 2022</a></li></h3>
+        <h3><li><a href="2023.html">♡. 2023</a></li></h3>
+        <h3><li><a href="2024.html">♡. 2024</a></li></h3>
+        <br>
+        <img src="치이카와2.jpg" width="200vw">
+        <span id="email-address">24kms@sookmyung.ac.kr</span>
+        <br><br><br><br>
+
+        <span id="box">
+        □ 편지함
+        <br>
+        □ 사물함
+        </p>
+
+    </span>
+    </ul>
+    <div>
+        <br>
+        <img src="카힐.jpg" id="kahill-image">
+        <div id="text-container">
+            <p>
+                Cascading Style Sheets(<a href="https://ko.wikipedia.org/wiki/CSS" target="_blank" title="css specification">CSS</a>) 
+                is a style sheet language used for specifying the presentation and styling of a document written in a markup language. 
+                <a href="https://html.spec.whatwg.org/multipage/" target="_blank" title="html specification"> Hypertext Markup Language(HTML) </a> 
+                is the standard markup language for <strong>creating web pages</strong> and web applications.
+            </p>
+            <div class="like-content">
+                <button class="btn-secondary like-review">
+                    <i class="fa fa-heart" aria-hidden="true"></i> Like
+                </button>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        function likeAnimationButton() {
+          var element = document.querySelector('#Night _Day');
+          element.classList.add('animate-like');
+          setTimeout(function(){
+            element.classList.remove('animate-like');
+          }, 650); // 애니메이션 지속 시간(0.65초)을 ms로 변환하여 여기에 추가하세요.
+        }
+    
+        $(function(){
+            $(document).one('click', '.like-review', function(e) {
+              $(this).html('<i class="fa fa-heart" aria-hidden="true"></i> You liked this');
+              $(this).children('.fa-heart').addClass('animate-like');
+            });
+          });
+          
+      </script>
+        
+    </div>
+
+    
+      
+    </body>
+    
+    </html>
+    
