@@ -179,3 +179,9 @@
             margin-bottom: 1vw;
             margin-left: 1vw; 
         }
+        #gif{
+            margin-left: 14.6vw;
+            width: 56vw;
+            max-width: 100%;
+            height: auto;
+        }
