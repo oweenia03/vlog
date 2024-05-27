@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>여행 ♡LOG</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- style.css 파일을 HTML 파일과 같은 폴더에 만들고, head 태그에서 불러오기 -->
+    <link rel="stylesheet" type="text/css" href = "style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="colors.js"></script>
+    <style>
+      #image-container {
+          display: grid;
+          grid-template-columns: auto auto; /* 한 열에 하나의 이미지 */
+          gap: 25px; /* 이미지 사이 간격 조절 */
+          align-items: center;
+      }
+     
+  
+  </style>
+</head>
+
+<body>
+    
+    
+    <h1><a href="index.html">여행 ♡LOG</a></h1>
+    
+    <input id="night_day" type="button" value="night" onclick="
+          nightDayHandler(this);
+        ">
+        
+    <div id="grid">
+    <ul>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1lvK8Y6Zt4od4CWj82rLhE?utm_source=generator" width="75%" height="150" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <br>
+        <h3><li><a href="2022.html">♡. 2022</a></li></h3>
+        <h3><li><a href="2023.html">♡. 2023</a></li></h3>
+        <h3><li><a href="2024.html" class="link-color">♡. 2024</a></li></h3>
+        <br>
+        <img src="치이카와2.jpg" id="kawai-image">
+        <span id="email-address">24kms@sookmyung.ac.kr</span>
+        <br><br><br><br>
+
+        <span id="box">
+        □ 편지함
+        <br>
+        □ 사물함
+        </p>
+
+    </span>
+    </ul>
+    <div>
+        <br>
+        <div id="image-container">
+          <div class="image">
+              <img src="노들섬.jpg" id="k3-image" alt="Image">
+          </div>
+          <div class="text">
+              <p span id="txt"><a href="고3.html">[청파동 나들이]</a></p>
+              
+                <p><li class="ttxt">✅🎉숙명여대 입학🎉</li></p>
+                <p><li class="ttxt">✅전시회, 노들섬, 눈송이 생카 etc</li></p>
+                <p><li class="ttxt">✅청파동_지박령</li></p>
+                
+      
+          </div>
+          <div class="image">
+              <img src="2주.jpg" id="k3-image" alt="Image">
+          </div>
+          <div class="text">
+              <p span id="txt"><a href="고3.html">[2주간의 망일지]</a></p>
+              <p><li class="ttxt">✅02.29 - 03.15</li></p>
+                <p><li class="ttxt">✅⚽︎🌹</li></p>
+                <!-- <p><li class="ttxt">✅</li></p> -->
+                
+          </div>
+          <!-- <div class="image">
+              <img src="제주2.jpg" id="k3-image" alt="Image">
+          </div>
+          <div class="text">
+            <p span id="txt"><a href="제주도.html">[제주도 한 달 살이]</a></p>
+            <p><li class="ttxt">✅충동 여행 feat.6떨 이슈</li></p>
+                <p><li class="ttxt">✅제주시 & 서귀포 여행 </li></p>
+                <p><li class="ttxt">✅제 먹부림을 구경하러 오새요^^b</li></p>
+          </div> -->
+      </div>
+
+
+            <div class="like-content">
+                <button class="btn-secondary like-review">
+                    <i class="fa fa-heart" aria-hidden="true"></i> Like
+                </button>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="heart.js"></script>
+        
+    </div>
+
+    </body>
+    
+    </html>
+    
