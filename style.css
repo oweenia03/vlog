@@ -82,10 +82,12 @@
         }
 
         p {
+            font-family: "Sunflower", serif;
             margin-left: 15.8vw;
             margin-right: 11.4vw;
             font-size: 1.3vw;
-            text-align: justify;
+            text-align: center;
+
         }
 
         .link-color{
@@ -184,4 +186,11 @@
             width: 56vw;
             max-width: 100%;
             height: auto;
+        }
+
+        .playlist{
+            color: #006769;
+            font-family: "Sunflower", serif;
+            margin-left: 63vw;     
+            font-size: 1.5vw;    
         }
